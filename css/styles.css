@@ -1,0 +1,96 @@
+body{
+  overflow-x: hidden;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+.main-content{
+  position: relative;
+  /* border:blue 3px solid; */
+  left:0px;
+  transition: left .3s ease-in-out;
+  outline: rgb(105, 200, 255) 3px solid;
+  height: 100vh;
+  padding-left: 20px;
+
+}
+
+.main-content--moved{
+  left:200px;
+
+}
+
+.navbar{
+  padding: 20px;
+  background-color: blue;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.nav-links{
+  display: flex;
+}
+.logo{
+  margin-left: 10px;
+  font-size: 2rem;
+}
+
+.hamburger-menu__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger-menu{
+  /* background-color: white; */
+  stroke:rgba(1, 1, 1, 0.5);
+  fill: white;
+  border-color: white;
+  cursor: pointer;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  padding:10px;
+}
+a:last-child{
+  padding-right: 0px;
+}
+
+.side-bar{
+  background-color: blue;
+  color: white;
+  height: 100vh;
+  width: 200px;
+  top: 0;
+  position: absolute;
+  /* outline: 4px solid red; */
+  padding-top: 50px;
+  transform: translate3d(-100%, 0, 0);
+  transition: transform .3s ease-in-out;
+}
+
+.side-bar--active{
+  transform: translate3d(0, 0, 0);
+}
+
+.side-bar li{
+  margin-bottom: 10px;
+}
+
+.side-bar__btn-close{
+  cursor: pointer;
+  padding:15px;
+  font-size: 2rem;
+  position: relative;
+  top: -50px;
+  left: 145px;
+  width:fit-content;
+}
